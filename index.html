@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Padel Avenue — Play with class</title>
+  <meta name="description" content="Padel Avenue : collection exclusive d'équipements de padel. Projet fictif.">
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#accueil" class="logo">PADEL AVENUE</a>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <nav id="menu">
+        <a href="#accueil">Accueil</a>
+        <a href="#collection">Collection</a>
+        <a href="#marques">Nos marques</a>
+        <a href="#apropos">À propos</a>
+        <a href="#panier">Panier (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Performance • Style • Excellence</p>
+          <h1>PLAY WITH<br><span class="gold">CLASS.</span></h1>
+          <p class="lead">Découvrez notre collection exclusive d'équipements de padel.<br>Le style premium rencontre la performance.</p>
+          <a href="#collection" class="btn">Découvrir la collection ↗</a>
+        </div>
+        <div class="hero-img"><img src="images/hero-court.jpg" alt="Court de padel Padel Avenue"></div>
+      </div>
+    </section>
+
+    <section id="collection" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Notre <span class="gold">collection</span></h2>
+          <span class="tag">Projet fictif</span>
+        </div>
+        <div class="grid" id="products"><p class="muted">Chargement…</p></div>
+      </div>
+    </section>
+
+    <section id="marques" class="section">
+      <div class="container">
+        <h2>Nos <span class="gold">marques</span></h2>
+        <div class="brands">
+          <div class="brand"><span>A</span><strong>ADIDAS PADEL</strong><small>Style &amp; dynamisme</small></div>
+          <div class="brand"><span>N</span><strong>NOX</strong><small>Contrôle &amp; excellence</small></div>
+          <div class="brand"><span>W</span><strong>WILSON</strong><small>Tradition &amp; performance</small></div>
+          <div class="brand"><span>B</span><strong>BULLPADEL</strong><small>Puissance &amp; précision</small></div>
+          <div class="brand"><span>H</span><strong>HEAD</strong><small>Innovation &amp; qualité</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Notre univers • Padel Avenue</p>
+          <h2 class="big">Plus qu'un sport,<br><span class="gold">un art de vivre.</span></h2>
+          <p class="lead">Padel Avenue est un concept fictif dédié aux passionnés de padel, où l'élégance rencontre la performance. Découvrez un univers inspiré par le sport, le style et l'excellence.</p>
+          <a href="#collection" class="btn">Explorer la collection ↗</a>
+        </div>
+        <div class="pa-card">
+          <div class="pa">PA</div>
+          <p class="pa-sub">PLAY WITH CLASS.</p>
+          <hr>
+          <p class="pa-small">EST. 2026 • PROJET ACADÉMIQUE</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="panier" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Votre <span class="gold">panier</span></h2>
+          <span class="tag">Démonstration</span>
+        </div>
+        <div id="cart"></div>
+
+        <form id="order-form" class="order-form" hidden>
+          <h3>Finaliser la commande</h3>
+          <div class="form-row">
+            <label>Nom complet<input name="name" required minlength="2" maxlength="100"></label>
+            <label>Téléphone<input name="phone" required pattern="[0-9+ ]{8,15}" placeholder="+216 …"></label>
+          </div>
+          <label>Adresse de livraison<textarea name="address" rows="2" required maxlength="255"></textarea></label>
+          <button class="btn" type="submit">Valider la commande</button>
+        </form>
+        <p id="order-msg" class="order-msg" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 Padel Avenue — Projet fictif à but académique.</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
